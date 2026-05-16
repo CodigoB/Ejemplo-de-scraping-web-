@@ -1,15 +1,12 @@
-from traceback import print_tb
-
 import requests
 from bs4 import BeautifulSoup
 import json
 import re
+from lectura_de_link import leer_archivo
 
+link = leer_archivo()
 
-lik =
-
-
-respuesta = requests.get(lik)
+respuesta = requests.get(link)
 respuesta_soup = BeautifulSoup(respuesta.content, 'html.parser')
 
 product = []
@@ -20,7 +17,7 @@ product_stock = respuesta_soup.find_all('div', class_="stock")
 product_code = respuesta_soup.find_all('div', class_="code")
 product_imagens = respuesta_soup.find_all(src =True)
 
-print(product_imagens)
+# print(product_imagens)
 
 for i in range(len(product_titulo)):
 
