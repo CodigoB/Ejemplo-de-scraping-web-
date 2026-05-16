@@ -1,7 +1,0 @@
-.venv/
-categorias.py
-producto.json
-*.json
-*.csv
-.idea/
-.gitignore
