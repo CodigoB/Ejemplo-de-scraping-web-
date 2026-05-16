@@ -4,3 +4,4 @@ producto.json
 *.json
 *.csv
 .idea/
+.gitignore
