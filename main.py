@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 import json
 import re
 
-lik = 'www.adasdas.com'
+lik = 'www.holamundo.com'
 
 
 respuesta = requests.get(lik)
